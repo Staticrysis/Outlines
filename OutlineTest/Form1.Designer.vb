@@ -25,6 +25,7 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -38,9 +39,9 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(243, 195)
+        Me.Button1.Location = New System.Drawing.Point(12, 133)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(239, 66)
+        Me.Button1.Size = New System.Drawing.Size(245, 66)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
@@ -48,16 +49,26 @@ Partial Class Form1
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(243, 45)
+        Me.ComboBox1.Location = New System.Drawing.Point(18, 88)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(239, 21)
         Me.ComboBox1.TabIndex = 2
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(15, 52)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "Label2"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(494, 273)
+        Me.ClientSize = New System.Drawing.Size(342, 222)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
@@ -71,4 +82,5 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Label2 As Label
 End Class
